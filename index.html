@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <title>Document</title>
+    
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+                </li>
+
+              <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                    </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                      </svg>
+                </a>
+              </li>
+            
+            </ul>
+            <ul class="navbar-nav  mb-2 mb-lg-0">
+                
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Talks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Resume</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Contact</a>
+                  </li>
+                  
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pages
+                    </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li> 
+              </ul>
+          </div>
+        </div>
+      </nav>
+      <style>
+        .section-banner{
+            background-color: rgb(26, 132, 254);
+
+
+
+        }
+
+
+      </style>
+
+
+      <section class="section-banner pt-5 pb-5">
+        
+        <div class="container">
+            <div class="d-flex">
+                <img style="height: 250px;" class="rounded-2" src="https://cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png" style="width: 200px;">
+                <div class="flex-grow-1 ms-3">
+                    <p class="mb-0 text-white">Hello, my name is</p>
+                    <h2 class="text-white">Devin</h2>
+                    <p class="text-white" style="padding-right: 10px;">I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps. I write about web development on my blog and regularly speak at various web conferences and meetups. Want to know how I may help your project? Check out my project case studies and resume</p>
+                    <a href="" class="btn btn-primary">Hire me</a>
+                </div>
+            
+            </div>
+            
+        </div>
+      </section>
+      
+<style>
+    .thumbnail-icon{
+        width: 55px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        top: -35px;
+    }
+    .thumbnail{
+        position: relative;
+    }
+    .container{
+      padding-left: 300px;
+      padding-right: 300px;
+    }
+
+</style>
+
+      <section class="section-skill py-5" style="background-color: rgb(233, 233, 244);">
+        <div class="container text-center">
+            <h3>Skills Overflow</h3>
+            <p>I have more than 8 years' experience building rich web applications for clients all over the world. Below is a quick overview of my main technical skill sets and tools I use. Want to find out more about my experience?</p>
+            <a style="text-decoration: none;" href="">Check out my online resume</a>
+         
+            
+            <div class="row">
+                <div class="col">
+                    <div class="thumbnail bg-white p-3 text-start rounded mt-5 pt-5">
+                        <div class="thumbnail-icon bg-primary p-3 rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-code-square text-white" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
+                              </svg>
+        
+                        </div>
+                        
+                        
+                        <h5 class="text-center">Frontend</h5>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-primary" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                              </svg>
+                                React/Redux/Angular
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-primary" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                              </svg>
+                                Javascript
+                        </div>
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-primary" viewBox="0 0 16 16">
+                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                              Node.js
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-primary" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                  </svg>
+                                  Webpack/Gulp/Grunt
+                            </div>
+                            <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-primary" viewBox="0 0 16 16">
+                                  <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                </svg>
+                                HTML/CSS/SASS/LESS
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="thumbnail bg-white p-3 text-start rounded mt-5 pt-5">
+                        <div class="thumbnail-icon bg-primary p-3 rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-code-square text-white" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
+                              </svg>
+        
+                        </div>
+                        
+                        
+                        <h5 class="text-center">Backend</h5>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-primary" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                              </svg>
+                                Python/Django
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-primary" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                              </svg>
+                                Ruby/Rails
+                        </div>
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-primary" viewBox="0 0 16 16">
+                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                              PHP
+                      </div>
+                      <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-primary" viewBox="0 0 16 16">
+                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            PostgresSQL/MySQL
+                      </div>
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-primary" viewBox="0 0 16 16">
+                            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                          </svg>
+                          MongoDB
+                    </div>  
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="thumbnail bg-white p-3 text-start rounded mt-5 pt-5">
+                        <div class="thumbnail-icon bg-primary p-3 rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-code-square text-white" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
+                              </svg>
+        
+                        </div>
+                        
+                        
+                        <h5 class="text-center">Others</h5>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-primary" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                              </svg>
+                                DevOps
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-primary" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                              </svg>
+                                UnitTesting
+                        </div>
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-primary" viewBox="0 0 16 16">
+                              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            UX/Wireframing
+                      </div>
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-primary" viewBox="0 0 16 16">
+                            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                          </svg>
+                          Sketch/Balsamiq
+                    </div>
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-primary" viewBox="0 0 16 16">
+                          <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                        Wordpress/Shopify
+              </div>
+            </div>
+          </div>   
+        </div>
+      </section>
+      <style>
+        .nav-link{
+          top: ;
+        }
+
+      </style>
+      <section class="workwith  pt-5">
+          <div class="container">
+            <h3 style="font-weight: 680; color: rgb(85, 88, 92); margin-left: 20px;" class="text-center">Great clients I've worked with</h3>
+            </div>
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <img src="youtube-logo-png-46020.png"  style="width: 200px;">
+                  </div>
+                  <div class="col">
+                    <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png"  style="width: 200px; position: relative; top: 28px; ;">
+                  </div>
+                  <div class="col">
+                    <img src="https://download.logo.wine/logo/Airbnb/Airbnb-Logo.wine.png"  style="width: 200px; position: relative; bottom: 10px;">
+                  </div>
+                  <div class="col" style="position: relative; bottom: 105px; right: 210px; padding: 0 0 0 0 ;" >
+                    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png"  style="width: 180px;">
+                  </div>
+                  <div class="col" style="position: relative; bottom: 155px; left: 350px; padding: 0 0 0 0 ;" >
+                    <img src="https://download.logo.wine/logo/Dropbox_(service)/Dropbox_(service)-Logo.wine.png"  style="width: 250px;">
+                  </div>
+            </div>
+          </div>
+    </section>
+
+      <section style="background-color: rgb(233, 233, 244);" class="featured-projects py-5">
+        <div class="container">
+          <h3 class="section-title font-weight-bold text-center mb-5">Featured Projects</h3>
+           <div style="display: flex;" class="project-cards row mb-5">
+        
+            <div class="col-12 col-lg-4">
+          <div class="card rounded-0 border-0 shadow-sm mb-5">
+            <div class="card-img-container position-relative">
+              <img class="card-img-top rouded-0" src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/juaracoding-alasan.original.jpg">
+              <div class="card-img-overlay overlay-logo text-center">
+                <div class="project-logo">
+                  <img class="img-fluid w-50" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card-body pb-5 px-0">
+                <h4 class="card-title text-truncate text-center mb-0">SaaS Product</h4>
+              </div>
+
+              <div class="card-footer border-0 text-center bg-white pb-4">
+                <ui class="list-inline mb-0  mx-auto">
+                  <li class="list-inline-item">
+                    <span class="badge bg-secondary badge-pill">Angular</span>
+                  </li>
+                </ui>
+
+                <ui class="list-inline mb-0 mx-auto">
+                  <li class="list-inline-item">
+                    <span class="badge bg-secondary badge-pill">Django</span>
+                  </li>
+                </ui>
+
+                <ui class="list-inline mb-0 mx-auto">
+                  <li class="list-inline-item">
+                    <span class="badge bg-secondary badge-pill">MongoDB</span>
+                  </li>
+                </ui>
+
+                <ui class="list-inline mb-0 mx-auto">
+                  <li class="list-inline-item">
+                    <span class="badge bg-secondary badge-pill">HTML/CSS</span>
+                  </li>
+                </ui>
+
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-12 col-lg-4">
+            <div class="card rounded-0 border-0 shadow-sm mb-5 mb-lg-0">
+              <div class="card-img-container position-relative">
+                <img class="card-img-top rouded-0" src="https://res.cloudinary.com/highereducation/image/upload/f_auto,fl_lossy,q_auto/c_fill,w_500,h_300/w_400,c_fill,f_auto,fl_lossy,q_auto/v1610041366/BestColleges.com/how-much-do-coding-bootcamps-cost.jpg">
+                <div class="card-img-overlay overlay-logo text-center">
+                  <div class="project-logo">
+                    <img class="img-fluid w-50" src="https://phillipgibbs.co.uk/wp-content/uploads/2017/12/basecamp-logo.png">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="card-body pb-5 px-0">
+                  <h4 style="font-size: 20px;" class="card-title text-truncate text-center mb-0">Webapp Development</h4>
+                </div>
+                
+                <div class="card-footer border-0 text-center bg-white pb-5">
+                <ui class="list-inline mb-0  mx-auto">
+                  <li class="list-inline-item">
+                    <span class="badge bg-secondary badge-pill">Rails</span>
+                  </li>
+                </ui>
+
+                
+                  <ui class="list-inline mb-0  mx-auto">
+                    <li class="list-inline-item">
+                      <span class="badge bg-secondary badge-pill">jQuery</span>
+                    </li>
+                  </ui>
+  
+                  <ui class="list-inline mb-0  mx-auto">
+                    <li class="list-inline-item">
+                      <span class="badge bg-secondary badge-pill">PostgresSQL</span>
+                    </li>
+                  </ui>
+  
+                  <ui class="list-inline mb-0  mx-auto">
+                    <li class="list-inline-item">
+                      <span class="badge bg-secondary badge-pill">HTML/CSS</span>
+                    </li>
+                  </ui>
+  
+                 
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <div class="card rounded-0 border-0 shadow-sm mb-5 mb-lg-0">
+                <div class="card-img-container position-relative">
+                  <img class="card-img-top rouded-0" src="https://asset-relasio.s3-ap-southeast-1.amazonaws.com/userfiles/article/thumbs_743_439/beb6930cefafb26ba2e55b8f661f502e.jpeg">
+                  <div class="card-img-overlay overlay-logo text-center">
+                    <div class="project-logo">
+                      <img class="img-fluid w-50" src="https://download.logo.wine/logo/Airbnb/Airbnb-Logo.wine.png">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card-body pb-5 px-0">
+                    <h4 style="font-size: 18px;" class="card-title text-truncate text-center mb-0">Mobile app development</h4>
+                  </div>
+                  
+                  <div class="card-footer border-0 text-center bg-white pb-5">
+                  <ui class="list-inline mb-0  mx-auto">
+                    <li class="list-inline-item">
+                      <span class="badge bg-secondary badge-pill">React</span>
+                    </li>
+                  </ui>
+  
+                  
+                    <ui class="list-inline mb-0  mx-auto">
+                      <li class="list-inline-item">
+                        <span class="badge bg-secondary badge-pill">Python</span>
+                      </li>
+                    </ui>
+    
+                    <ui class="list-inline mb-0  mx-auto">
+                      <li class="list-inline-item">
+                        <span class="badge bg-secondary badge-pill">MySQL</span>
+                      </li>
+                    </ui>
+    
+                    <ui class="list-inline mb-0  mx-auto">
+                      <li class="list-inline-item">
+                        <span class="badge bg-secondary badge-pill">Webpack</span>
+                      </li>
+                    </ui>
+    
+                    <ui class="list-inline mb-0  mx-auto">
+                      <li class="list-inline-item">
+                        <span class="badge bg-secondary badge-pill">HTML</span>
+                      </li>
+                    </ui>
+    
+  
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+      <a style="margin-left: auto;" href="" class="btn btn-primary text-center">View all projects</a>
+    </div>
+      </section>
+    
+      <section class="section-latest-blog-posts py-5" style="background-color: rgb(233, 233, 244);">
+        <div class="container">
+          <h3 class="section-title font-weight-bold text-center mb-5">Latest Blog Posts</h3>
+        <div class="blog-cards row" style="display: flex;">
+          
+          <div class="col-12 col-lg-6">
+            <div class="card-rounded-0 border-0 shadow-sm mb-5" style="display: flex;">
+              <div class="card-img-container position-relative">
+                <img class="card-img-top rounded-0" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVYAAACTCAMAAADiI8ECAAACFlBMVEXlMzhmZmbnMjhHR0cAAADmNDr///9oZmZlZ2ZoaGjjNDj6///nMjrmMjb8//9FSEfjOD08SEnqLjfmMz7//P9+RUQEeIj39/f/+fj6//vz///rMDv/+v/6/f/ZQElia2FcaGb//PT6//XcJCv/6e3/8PTfJij59f/nLDEAAAZkZmsAd4JxXmLnMEDou7iXmZsWGRUAFA9ZXFvZP0CuRTubXF+ZX2HaOTbXJzjPTF7nnZ/72c/1yMTkjpfeT1PSIiPolIvTQkvXTEjuIzHnenf4xc7ceoXNWl/3tr768erihorkfXndk4vdFTDibWrrurL40tzkP1HiWGDtc331scDeY1//5Nzxt7H/5fXQdGqULjCnKzHUJ0Hwg4l/ICk3Fw9rKSfpe5bhS2FTFxXsvankppfdqavfTUbZlp3Mb3bfEhvIKyXe1LnRxJywppCPh3RYU0JeERSRGyjZzZKLdUaFcWf97bthTz24rYCkl2iXgWJ6aFAxLyCsY1r/2Lv65qW7n4G+pm3ixJj6oJSdf2CPRDo3Hw8pFxPn2q4zBxCiNUIkEiAxExT7ypMIISgcMR/nw3wbUVxWkpSqUFV+m7HIzNasYXFzX3CTa3DoiaBQprWq0NCdansAYX4FgovFWmc1Z2cHGjIBBRdztbWLYmINRU1aorduh4odWoYPUm1Ue2xlf13b4rOcqIaem6XFrbV1oocAFQCU1eGNAAAOXElEQVR4nO2djX/TRpqAlalHSUYaVzv2xpJlO7FlywOJQxOHWjg2xhiTOMGs4yTmI0BbWjg+tsAeV5Zuc4Wye4VLodtAu9e7Lmz3aLvXva+9//BGUpw4ifldfz1Keqd5kijyV0BPXr3zzocVASEkAAAEznOFa/1BQOyD8/wBTsByni/A0cq9Pme41h8E3lpxOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6H832BUAEYXzINSnXI3/XwvAA5ZFr78pOF4v6SgQDh7334XyFDe4uxWS8fmEwFRSkcL1xolgwM7Ie43O+JHECEUOa0kJLCYUkMBtNisFYoHiyhDKQYCXCn/4f/F4GBSgWVDxVSoiZJUrx6eGp+OqnG41qtMLPfpAKSecC2+e7vYcb0EpodTSWkYFBUJ4+U69Q0yamjVWY5GE1PH80ZlGt1AeC7aMWEkop56sTPklI4Eg3HG8X9hiGQuSbNIVI/Nb+QTITDQfVnh3KmiRBEnm/DwHfwCqGsE2sxn9Q0UdTiyWOL9QpLpArNFwyssMcoiB2ZTKn+cKR17LBiIKJXvOyVCSVE1nUFygIgWMDbZbB7gJyxyvnJODvTw+Lx0RMWew0UIIG5ZKopM626TioVq3ykqjLr/uT0YcsgAHq19UICIXqmfPLkmZNLMSUgE6JsV6EDy2oWmdOwGBST1flTdSygAAPqxowUrlqKbhPQiQxKsdONlMjqg9roUUS7/DBPAAQFWGd8Lq+9fnJpacnapkKnb1RTGsucUqpwYK4OcwhjCG2tINdIR9Smwm5B6MQmBMRqHmilREbr/Fl5B47pRwBBMPumb9cuH/uytz7fm3OZLV6hTBtBNc405c9aZgXkFNnWygiYs2o6KL5lCNDF+R7I1K2pcwWWZrVDO3NUOw6Qldd9jk7HKzM7EQhseQ6E5qQo1s7ts0xCBAQARM69ikKsRkiStJpiQtlGcLTKgQCmpnHwfET9K7oTB/UjQEdvrmll35jVXwTw1qcg2Twmihcusc6Vbl9Lwq0aoKDolal0OixpWt4AUHC0boDNi5FIjrywA/lxYWvt4H52uwhEzBlRPG8C3blCx/oFJVDl0luhtF/T/MfniK5v0QroRTF5edvvyBsAxJLAz9++crX32rVrV98e/AXp0sgAOiNJhcskYPvcGAEktFyTIiFVDEvnA7oOMOiUqJvF6KTpUa0YZf56+frfvHPlxq1bV355c/AM7NZ20ym/NnmZZATncl1tsbKx4A+FQmowGG6dggq22XiNbk5LBW9qBYD1k0743r3zq7evvnfzypWby38LtjZYNjim+pMlPYA2XVMqU05GQyFNVCNS/AhhRRfo1ErMgnTMk1rtDlYl+/577926cePdd2/duvXutbe21QHOE61UMJUjCnJTwFpuNYrpYEJLJ7WgP9GyKAabAp2UWv6i6cU5A6ffin59+/oHt2/fufPBB7ffvvlro1vHCFiscD1I7EccrY5XbCXToUSiOqVJYlwrVsjmJovmVHGWelCrM8CCyOJv7t26wz5ZtP78V4ty1/6mUZW0xYpTJABnFJG9kM6E1ETCP1uvSqImNSx5m9bglBdzgCMWAeXvlq9cv/P+nXvXr7yyV+k+1Wcek8KzJtkIVaDnjEktIUVbl+liPBqORA5tiVbUFNVsl3EbrwCWWL26/OFrd9m3pWdcQbKS94fzJna1Os0WNOZZrEaieaNyqRCMqMGCsaU7cFqqeXPMFUEBs4Ats17W1Xv3rvp2/X2M1UhdtILKjChNm+6lUF2t2KhGNU1Llimhb4is6Yo3yaYxWzMfrXlypoD16pGiBJS5lbtO93XXRysKQ8fmtqdWplRplCIE16dW6b40q67Cx0wiIKMhaqJYtTZJZHmj6k2tsh47c//+a/dfW37l2ocf/tL3Edu/f/9MGbUHpNqtFyBNVWrJnVrN6ajKugJTJICQcVqN+sVIk3QEOmBl67TpRa0Cib3uc0cDffcePHhw177BPu/PAeBaba+pACRW8yct0DYtC+BgLR0KRQv1TIblhFJB8vujb5U6fjagDemC4ckBLDDhjlx9/PFvP3nwySfLY2PueMvrLBXYw9QQ57KCUyORXMuvxlhnwI1fGesLWjSUjh6mAYgQkWfjYjh6/GxHC4WVpDTvyRZLgCs+38erXw4PDDy88+Dm1cGhoaHx8fGXXxrZu8arex8pjlZgTorxJmhrDbCuQDgUTiezTByCeiDXSsRT0oIhr+cNvF/1L+qenHORV3xjAw6ftm6Pj/f29vYPMkb6d9v09bHNSNbRisxRvzZPhTVr0DyQCIdCwSOXKDUMAyPjDU2LB5OxDq1NVd3vTa1gn2+VOR0eHv70s9+ND/X29vT19Q32/sPnn38+0tvDYFpjbkepkhfFGVNea8l0o5WQJCm1UHTI54v/mNJUVVwwAu3alR5I1LI69GDnVRBWPnaDdeCfvrhga3XE9vz+1MzSo35H69CaVrtwFc+vT1mRWTXKojUUZUg2YSkkikHWrcq0R2qMc2IyJ3tQK4T40eOBJ51a+/rY19Dv9l/Y98iN1sE1rTqdl6RRE7kTgwQ1IlEtHIqk06F0MKRqmp8VW2IwmDhSb0ercV5sIeC9JADnMuSrgYEnq67W8yO21Z6e3r7Bd+atP/ze0drb1kpoU/QXTCdaUYb8IRyOhMLhdDodsVFVNWQvdgmy894tqYhgTIp5A3lPq5zJZL4cfjL8R1vr0y8uOFr7mNY/D+5debW/r9+mrRXTWERKIszCFeBMvWoPX0uJRNwWGwzaawL8rKPFurBFw548REAwWlreYL8Dz2UBktnLSqvVfx62o/Wpo9WJ0D6md2hwi1ZkJaVU1tYqUHKWnfKhcG2y4DC6xiRLAv6GRTHTKgArKeZZdHtOK66Uv2Q1gG+XkwSevsp09vfvtpstO2p7Havt3AowNhrRVAzb3Vds5iVmVcobp6zLJaNUMhzMZspenHnkErbPfNJMiVPUgxf9x/qrw08GVn27HjOtT5jWoV7Hav8eB1druxIQsFmV0ovuYEssaQdrqpzJBDAha2sNIahXWaPF2immFQByKOho9ZJXBbL8B1iwPhn4oxutA0/3OlqZV9fqnp7OaBVy2FyQgidsrYgWI7bW6XoAdqzgZDn3qMpqrMgMtccQyGFRLHtrRAAhdtgYszJg4Gufz2dH68A3n4+wnNrPqtVOrSy3Zp3xFSTQGU3LswqrgsvJONOaOOGc7OvhCO1lbn6/P97IUYArNC82LM+EqmMBU5TNZmOPHw8/9q1r3WNr7evv2b2utadnQyuE9JBoawWkMpNIqCF/q7R5vJs9xTwtSlIkcpTKAjGq/oIBkeCNJss5Z7Exk0omU0+fDA98PbamdeBPI309fbuHhtpa+3tHGH1fZe1hWeaM9fG1AkWKnmupCda/ugA2T/9BOUBLNUkKitNGAAilglQwFG/87R9Hqj1zMiOlo+GH39g6V9/7018eshrrm93/8u23q3/+12uO1P/YM7RvqnywHIspsi4rttZcLdyooxw+LEYiUjR+kOLN83+QNWvnWKMlpc4GAHt2tEiRJ7QCuykhJBAgc4109Atb5sDwv924d+PGQ7b38NvV1X+/9eD9ttY5SikJZDL2OmvZzpw1KWlhWGpEJUmNj5YI3tbM4/JxkeWBUQsLuZq/SLwRrVSJlcsTEytL+y/+52ef7fl0mJ3+w/euX793/S/DA48ff7369ZU777zT79L31UrZhcVslgX65ZaUOkVItlgszszMNLtOVZea8/PF8/k5JGRV/2FvaMWkvPzb5ft3P7y7/MomPtrV3nMWDq/tjzmbsbFdY2P/dVLBglHwJy7Wdb1CMaGGvci9S4cfY2qYFOFSUUopFU8kAUyzExOPRsafwcsOL22B3fHTlaUyZFqPiWpkumxUZCizHA2VAOzyRhbovCGueUwNxz2ilfVAES6PDLFuP+uasg5qH9v097e7q1212ndMEGe9inGxJkpa7ZxlyLqjFW7TCgOygICRzR+PRlOnDc80WZBmR4b6mNYeex7AHrCyx1acMcAeNzQ3grRtlWm1q1IB4dw5NRwVk0WrQgEBCtw2Rg0zOinlZlqaeDyflRGrwLwxjL2mtStbT/91vRPuoivWzy8dnE6pqtiYNyjpGoigbp2eVEV1YT91QtVOFC/8IF88rtbuXv8HrQJAOWQYzWrEL0UmF+sBAW9dDogpXSzU/JHRpsGEykBee/fL/3scrd2D9Rla7dzqLmy3g5PVvdbFVkLyqwv76mSLVmw1FyR/fPIQO/shgrLjdWeO8wXjaHVzaWfMOvtuIt2ydaJ1Y2U7IOzktmZbmiamFs5am7wC43S1MVmdMUznrXAIeqPBsumI1i1ae3te6jC5bnWzVpZfsZBRTCtfEyNSqpg1Oq8iAmipVDIyGWVtftZjWp1KYK0GcOewnWrg5Y4SoHNraxWcsS+wNryKkHlwQU1oYvKEldmWYd1/6AUf2M4CsdNkuessNrTaose75YANrWADFoOYms3RSDAqFhZLZnexXgKS2MhQG2bW2bo3xn/SnZd/MgHdaF0fWWHNkaJQc18jLmrx0al6dicP6ccAILFH9oo1hrt0rb3Ddn/6LMq6myPX/na6vQqetfJAJrnZSTHiry1MGzt9XDuLvbhScbHn+lB7325glGcQyGQya20WWK+znJIUYCoXk9G0VK0Lnqj6nwkMIEqBM+pqAwgGeP0mZh/boTSwrlXY0GqLBTDD+v+12gHabdDFS3yfo+94TWfJBCGAEGMjljWwx6P1+WNf64JlCa71ecM6CAGu9bnDylbItf4wcK0cDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4Tyb/wZPHVt2i/LKdwAAAABJRU5ErkJggg==">
+          
+                
+          <div class="card-body pb-4">
+            <h4 class="card-title text-truncate mb-2">
+              <a style="text-decoration: none; font-size: 23px;" class="text-link">How to Create an Angular Library</a>
+            </h4>
+            <div class="card-text">
+              <ul class="meta list-inline mb-1">
+                <li class="list-inline-item me-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                  </svg>
+                  July 19, 2022
+                  
+                </li>
+                <li class="list-inline-item me-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+                    <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+                  </svg>
+                  <a class="text-link" style="text-decoration: none; color: black;" href="">4 Comments</a>
+                </li>
+              </ul>
+              <div class="excerpt">
+                 Blog  post intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel sapien quis nulla dictum euismod. Vivamus sed mi vitae dui iaculis venenatis...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="col-12 col-lg-6">
+      <div class="card-rounded-0 border-0 shadow-sm mb-5" style="display: flex;">
+        <div class="card-img-container position-relative">
+          <img class="card-img-top rounded-0" src="https://ruko.s3.ap-southeast-1.amazonaws.com/rumahkomunitas.com/tulisan/300419100457_arif-riyanto-974674-unsplash.jpg">
+    
+          
+    <div class="card-body pb-4 ">
+      <h4 class="card-title text-truncate mb-2">
+        <a style="text-decoration: none; font-size: 23px;" class="text-link">React, Bootstrap, and Angular- The Basics</a>
+      </h4>
+      <div class="card-text">
+        <ul class="meta list-inline mb-1">
+          <li class="list-inline-item me-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+            </svg>
+            July 14, 2022
+            
+          </li>
+          <li class="list-inline-item me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+              <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+            </svg>
+            <a class="text-link" style="text-decoration: none; color: black;" href="">10 Comments</a>
+          </li>
+        </ul>
+        <div class="excerpt">
+           Blog  post intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel sapien quis nulla dictum euismod. Vivamus sed mi vitae dui iaculis venenatis...
+        </div>
+      </div>
+    </div>
+   </div>
+ </div>
+</div> 
+
+<div class="col-12 col-lg-6">
+  <div class="card-rounded-0 border-0 shadow-sm mb-5" style="display: flex;">
+    <div class="card-img-container position-relative">
+      <img class="card-img-top rounded-0" src="https://blog.payrollbozz.com/wp-content/uploads/sites/28/2017/04/programmer.jpg">
+
+      
+<div class="card-body pb-4">
+  <h4 class="card-title text-truncate mb-2">
+    <a style="text-decoration: none; font-size: 23px;" class="text-link">React, Bootstrap, and Angular- The Basics</a>
+  </h4>
+  <div class="card-text">
+    <ul class="meta list-inline mb-1">
+      <li class="list-inline-item me-5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+          <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+        </svg>
+        July 14, 2022
+        
+      </li>
+      <li class="list-inline-item me-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+          <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+        </svg>
+        <a class="text-link" style="text-decoration: none; color: black;" href="">10 Comments</a>
+      </li>
+    </ul>
+    <div class="excerpt">
+       Blog  post intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel sapien quis nulla dictum euismod. Vivamus sed mi vitae dui iaculis venenatis...
+    
+        </div>
+       </div>
+       
+      </div>
+     </div>
+    </div>
+   </div> 
+   <div class="text-center">
+    <a class="btn btn-primary" href="">View all posts</a>
+  </div>
+  </div>
+ </div>
+</section>
+    
+<section class="featured-in pt-5">
+  <div class="container">
+    <h3 style="font-weight: 680; color: rgb(85, 88, 92); margin-left: 20px;" bac class="text-center">Featured In</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="align-self-center press-logo px-4 px-lg-3 col-6 col-lg-3 me-0 px-md-5 px-lg-5 mb-3 mb-lg-0">
+            <img class="img-fluid svg-ie-fix" src="http://assets.stickpng.com/images/58482e1fcef1014c0b5e4a66.png">
+          </div>
+          <div class="align-self-center press-logo px-4 px-lg-3 col-6 col-lg-3 me-0 px-md-5 px-lg-5 mb-3 mb-lg-0" >
+            <img class="img-fluid svg-ie-fix" src="http://cdn.onlinewebfonts.com/svg/img_4461.png">
+          </div>
+          <div class="align-self-center press-logo px-4 px-lg-3 col-6 col-lg-3 me-0 px-md-5 px-lg-5 mb-3 mb-lg-0" >
+            <img class="img-fluid svg-ie-fix" src="https://cdn-icons-png.flaticon.com/512/23/23300.png">
+          </div>
+          <div class="align-self-center press-logo px-4 px-lg-3 col-6 col-lg-3 me-0 px-md-5 px-lg-5 mb-3 mb-lg-0">
+            <img class="img-fluid svg-ie-fix" src="https://css-tricks.com/wp-content/uploads/2013/06/CSS-Tricks-logo.png">
+          </div>
+          
+    </div>
+  </div>
+</section>
+
+<section class="section-cta py-5 bg-primary text-white">
+  <div class="text-center">
+    <img style="width: 80px; height: 80px;" class="profile-small d-inline-block mx-auto rounded-circle mb-2" src="https://cms-assets.tutsplus.com/uploads/users/810/profiles/19338/profileImage/profile-square-extra-small.png">
+  </div>
+  <h3 class="section-title font-weight-bold text-center mb-2">Interested in hiring me for your project?</h3>
+  <div class="section-intro mx-auto text-center mb-3" style="font-size: 14px;">
+    Looking for an experienced full-stack developer to build your web app or ship your software product? To start an initial chat, just drop me an email at steve.doe@youremail.com or use the form on the contact page.
+  </div>
+  <div class="text-center">
+    <a class="btn btn-outline-dark" href="">Let's Talk</a>
+  </div>
+ </div>
+</section>
+
+<footer style="background-color: #434E5E;" class="footer text-light text-center py-2">
+  <small> Template Copyright © 3rd Wave Media</small> 
+</footer>
+
+
+
+
+
+
+
+                    
+            
+
+
+
+
+</body>
+<script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
+</html>

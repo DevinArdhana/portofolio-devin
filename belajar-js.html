@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input type="number" id="number1">
+<input type="number" id="number2">
+<h1 id="heading_penjumlahan">-</h1>
+<button onclick="jumlahkanAngka()">Jumlahkan</button>
+
+</body>
+<!-- <script src="bootstrap-5.2.0-beta1-dist/assets/script.js"></script> -->
+
+ <script>
+    
+    function jumlahkanAngka(){
+        var number1Html = document.getElementById("number1");
+        var number2Html = document.getElementById("number2");
+        var angka_pertama = number1Html.value;
+        var angka_kedua = number2Html.value;
+        
+        var hasil_penjumlahan = Number (angka_pertama) + Number (angka_kedua);
+        var hasil_penjumlahanHTML = document.getElementById("heading_penjumlahan");
+        hasil_penjumlahanHTML.innerHTML = hasil_penjumlahan 
+        
+    
+        
+        
+        
+        
+        // if (hasil_penjumlahan>=100){
+        //     console.log("Angka Besar")
+        // }
+        // else{
+        //     console.log("Angka Kecil")
+        // }
+        
+        //  console.log(hasil_penjumlahan);
+    }
+    
+</script> 
+
+<!-- // var nilai = 70;
+// if(nilai>=80)
+// {
+//     console.log("Saya Lulus dengan pujian");
+// }
+
+// else if(nilai >= 60)
+// {
+// console.log("Saya Lulus");
+// }
+// else if(nilai >= 50)
+// {
+// console.log("Saya Lulus Bersyarat");
+// }
+
+// else{
+//     console.log("Saya Tidak Lulus");
+// } -->
+</html>
